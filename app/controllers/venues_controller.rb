@@ -22,7 +22,7 @@ class VenuesController < ApplicationController
     venue.neighborhood = params.fetch("query_neighborhood")
     venue.save
 
-    redirect_to("/venue/#{venue.id}")
+    redirect_to("/venues/#{venue.id}")
   end
   
   def update
@@ -34,7 +34,7 @@ class VenuesController < ApplicationController
     venue.neighborhood = params.fetch("query_neighborhood")
     venue.save
     
-    redirect_to("/venue/#{venue.id}")
+    redirect_to("/venues/#{venue.id}")
   end
 
   def destroy
